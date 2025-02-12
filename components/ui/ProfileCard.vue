@@ -14,7 +14,7 @@
           :translate-z="100"
           class="mt-4 w-full"
         >
-          <NuxtImg
+          <img
             src="/img-profile-card.jpg"
             height="1000"
             width="1000"
