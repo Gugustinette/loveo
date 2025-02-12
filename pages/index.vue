@@ -21,9 +21,9 @@
       <div class="py-4 text-base font-extralight md:text-4xl dark:text-neutral-200">
         L'app de rencontre boostée à l'IA.
       </div>
-      <div class="flex min-h-64 items-center justify-center">
+      <NuxtLink to="/inscription" class="flex min-h-64 items-center justify-center">
         <InteractiveHoverButton class="w-48" text="Je m'inscris" />
-      </div>
+      </NuxtLink>
     </Motion>
   </AuroraBackground>
 </template>

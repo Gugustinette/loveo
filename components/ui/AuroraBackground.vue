@@ -26,7 +26,9 @@
           "
         ></div>
       </div>
-      <slot />
+      <div style="z-index: 10; height: 100vh; width: 100vw; display: flex; justify-content: center; align-items: center;">
+        <slot />
+      </div>
     </div>
   </main>
 </template>
