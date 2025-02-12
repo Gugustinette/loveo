@@ -5,7 +5,7 @@
   <AuroraBackground>
     <main>
       <p>Il semble qu'aucun profil ne corresponde à vos critères de recherche. 😕</p>
-      <ShareOnTwitter :text="`Super nul cette appli !\nMais @gugustinette est quand même bien sympa vous trouvez pas ? ^^\n\n`" url="https://loveo.com" />
+      <ShareOnTwitter :text="`Super nul ce site !\nMais @gugustinette est quand même bien sympa vous trouvez pas ? ^^\n\n`" url="https://loveo.cloud" />
     </main>
   </AuroraBackground>
 </template>

@@ -6,7 +6,7 @@
     <main>
       <p>Voici votre âme-soeur !</p>
       <ProfileCard />
-      <ShareOnTwitter :text="`J'ai trouvé mon âme-soeur sur Loveo !\n@gugustinette est vraiment magnifique purée la dinguerie\n\n`" url="https://loveo.com" />
+      <ShareOnTwitter :text="`J'ai trouvé mon âme-soeur sur Loveo !\n@gugustinette est vraiment magnifique purée la dinguerie\n\n`" url="https://loveo.cloud" />
     </main>
   </AuroraBackground>
 </template>
