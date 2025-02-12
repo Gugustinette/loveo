@@ -1,4 +1,7 @@
 <template>
+  <nav>
+    <NuxtLink to="/">Loveo.</NuxtLink>
+  </nav>
   <AuroraBackground>
     <Form :total-steps="4" @submit="onSubmit">
       <template #step1>
