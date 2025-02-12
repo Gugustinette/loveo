@@ -67,8 +67,11 @@ const onSubmit = () => {
 }
 const onComplete = () => {
   isLoading.value = false
-  // Redirect to result page
-  router.push('/resultat')
+  if (inputGender.value === "women") {
+    router.push('/erreur')
+  } else {
+    router.push('/resultat')
+  }
 }
 </script>
 

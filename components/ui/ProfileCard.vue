@@ -19,7 +19,7 @@
             height="1000"
             width="1000"
             class="h-200 w-full rounded-xl object-cover group-hover/card:shadow-xl"
-            alt="thumbnail"
+            alt="Photo de profil d'Augustin"
           />
         </CardItem>
         <CardItem

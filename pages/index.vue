@@ -19,9 +19,9 @@
         Loveo.
       </div>
       <div class="py-4 text-base font-extralight md:text-4xl dark:text-neutral-200">
-        L'app de rencontre boostée à l'IA.
+        Le site de rencontre boostée à l'IA.
       </div>
-      <NuxtLink to="/inscription" class="flex min-h-64 items-center justify-center">
+      <NuxtLink to="/inscription" class="flex mt-32 items-center justify-center">
         <InteractiveHoverButton class="w-48" text="Je m'inscris" />
       </NuxtLink>
     </Motion>
