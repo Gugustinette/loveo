@@ -32,4 +32,13 @@
 import { Motion } from "motion-v";
 import AuroraBackground from "@/components/ui/AuroraBackground.vue";
 import InteractiveHoverButton from "@/components/ui/InteractiveHoverButton.vue";
+
+useSeoMeta({
+  title: 'Loveo',
+  ogTitle: 'Loveo',
+  description: "Le site de rencontre boostée à l'IA.",
+  ogDescription: "Le site de rencontre boostée à l'IA.",
+  // ogImage: 'https://example.com/image.png',
+  twitterCard: 'summary_large_image',
+})
 </script>
