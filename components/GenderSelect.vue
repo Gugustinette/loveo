@@ -8,12 +8,19 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
+import type { SelectRootEmits, SelectRootProps } from 'radix-vue'
+import { SelectRoot, useForwardPropsEmits } from 'radix-vue'
+
+const props = defineProps<SelectRootProps>()
+const emits = defineEmits<SelectRootEmits>()
+
+const forwarded = useForwardPropsEmits(props, emits)
 </script>
 
 <template>
-  <Select>
+  <Select v-bind="forwarded">
     <SelectTrigger>
-      <SelectValue placeholder="Je cherche ..." />
+      <SelectValue placeholder="Je recherche ..." />
     </SelectTrigger>
     <SelectContent>
       <SelectGroup>

@@ -25,11 +25,18 @@
 
       <template #step3>
         <Label for="input-name">Préférence</Label>
-        <GenderSelect />
+        <GenderSelect v-model="inputGender" />
       </template>
 
       <template #step4>
-        <h3>Récapitulatif</h3>
+        <h3 style="font-weight: bold;">Récapitulatif</h3>
+        <p>Je m'appelle : <span>{{ inputName }}</span></p>
+        <p>Je suis de : <span>{{ inputLocation }}</span></p>
+        <p>Je recherche : <span>{{
+          inputGender === "women" ? "une femme" : (
+            inputGender === "men" ? "un homme" : "peu importe"
+          )
+        }}</span></p>
       </template>
     </Form>
   </AuroraBackground>
@@ -44,13 +51,23 @@ import { ref } from 'vue'
 
 const inputName = ref('')
 const inputLocation = ref('')
+const inputGender = ref('')
 
 const onSubmit = () => {
   console.log('Form submitted')
   console.log('Name:', inputName.value)
   console.log('Location:', inputLocation.value)
+  console.log('Gender:', inputGender.value)
 }
 </script>
 
 <style scoped>
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+p > span {
+  font-weight: bold;
+}
 </style>
