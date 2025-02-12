@@ -40,6 +40,7 @@
       </template>
     </Form>
   </AuroraBackground>
+  <Loader :isLoading="isLoading" @complete="onComplete" />
 </template>
 
 <script setup lang="ts">
@@ -47,17 +48,24 @@ import AuroraBackground from "@/components/ui/AuroraBackground.vue";
 import Form from '@/components/Form.vue'
 import IInput from '@/components/ui/IInput.vue'
 import Label from '@/components/ui/label/Label.vue'
+import Loader from '@/components/Loader.vue'
 import { ref } from 'vue'
+
+const router = useRouter()
+
+const isLoading = ref(false)
 
 const inputName = ref('')
 const inputLocation = ref('')
 const inputGender = ref('')
 
 const onSubmit = () => {
-  console.log('Form submitted')
-  console.log('Name:', inputName.value)
-  console.log('Location:', inputLocation.value)
-  console.log('Gender:', inputGender.value)
+  isLoading.value = true
+}
+const onComplete = () => {
+  isLoading.value = false
+  // Redirect to result page
+  router.push('/resultat')
 }
 </script>
 

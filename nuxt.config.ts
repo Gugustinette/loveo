@@ -3,7 +3,14 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   ssr: false,
-  modules: ['@nuxt/fonts', '@nuxtjs/tailwindcss', 'shadcn-nuxt', 'motion-v/nuxt'],
+  modules: [
+    '@nuxt/fonts',
+    '@nuxtjs/tailwindcss',
+    'shadcn-nuxt',
+    'motion-v/nuxt',
+    '@nuxt/image',
+    '@nuxt/icon'
+  ],
   shadcn: {
     /**
      * Prefix for all the imported component
